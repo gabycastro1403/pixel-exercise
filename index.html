@@ -156,7 +156,11 @@
     <!-- Bootstrap core JavaScript -->
     <script>
       const eventCompleteRegistration = () => {
-        fbq('track', 'CompleteRegistration')
+        fbq('track', 'CompleteRegistration',{
+          value:49.99,
+          currency:'EUR',
+          status: true
+        })
       };
 
        (function viewContent(){
